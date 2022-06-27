@@ -1,0 +1,144 @@
+body {
+    background-color: #ddd;
+}
+
+p {
+    color: #111;
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: #0c0;
+    color: #ccc;
+    text-align: center;
+    font-size: 42px;
+    font-family: sans-serif;
+}
+
+h2 {
+    /* background-color: #0c0; */
+    color: #ccc;
+    text-align: center;
+    font-size: 32px;
+    font-family: sans-serif;
+    color: #111;
+    font: bold;
+}
+
+p {
+    color: #ccc;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #111;
+    font: bold;
+}
+
+.times {
+    /* display: inline-block; */
+    padding: 5px;
+    /* */
+}
+
+#idtime {
+    display: inline-block;
+}
+
+.base {
+    margin-left: 30px;
+}
+
+.master {
+    display: flex;
+    flex-direction: row;
+}
+
+.principal {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+#secundaria {
+    width: 200px;
+    height: 350px;
+    text-align: center;
+}
+
+.cards {
+    background-color: coral;
+    width: 290px;
+    margin-right: 5px;
+}
+
+.card {
+    height: 165px;
+}
+
+.container {
+    width: 95%;
+    height: 95%;
+    float: right;
+    margin-top: 15px;
+}
+
+.envolsecundaria {
+    margin-top: 260px;
+    display: flex;
+}
+
+.fontol {
+    font-size: 18px;
+    margin-top: 10px;
+    color: red;
+    font-weight: bold
+}
+
+.rowmod {
+    float: right;
+}
+
+#black {
+    color: #111;
+}
+
+.footer {
+    color: rgb(201, 99, 99);
+    background-color: black;
+}
+
+footer.footer {
+    height: 20px;
+    /* justify-content: center; */
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    /* font-size: max(12px, 1vw); */
+    padding: 2%;
+    margin-left: 20px;
+}
+
+.edress .R {
+    color: rgb(201, 99, 99);
+    font-size: 15px;
+    margin-top: 9px;
+    /* align-items: left; */
+}
+
+.carousel {
+    color: #ccc
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* footer {
+    height: 30px;
+} */
+
+
+/* footer .icons {
+    font-size: 200%;
+    font-size: min(20px, 2vw);
+} */
