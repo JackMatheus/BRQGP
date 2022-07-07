@@ -5,6 +5,7 @@
 package appbookelandia.view;
 
 import appbookelandia.controller.ControllerPesqPedido;
+import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -14,13 +15,14 @@ import javax.swing.JTextField;
  */
 public class FrmConsultaDePedidos extends javax.swing.JFrame {
 
-        //Importação da controller 
+    //Importação da controller 
     private final ControllerPesqPedido controller;
+
     /**
      * Creates new form FrmConsultaDePedidos
      */
     public FrmConsultaDePedidos() {
-        initComponents();              
+        initComponents();
         controller = new ControllerPesqPedido(this);
     }
 
@@ -180,7 +182,7 @@ public class FrmConsultaDePedidos extends javax.swing.JFrame {
 
     private void txtNumeroPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroPedidoActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_txtNumeroPedidoActionPerformed
 
     private void txtFormaDePagamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFormaDePagamentoActionPerformed
@@ -189,14 +191,21 @@ public class FrmConsultaDePedidos extends javax.swing.JFrame {
 
     private void btnConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarActionPerformed
         // TODO add your handling code here:
-        controller.pesquisarPedido();
-        JOptionPane.showMessageDialog(this, "Pesquisa realizada com sucesso");
-        //controller.limpaTela();
+        try {
+            // TODO add your handling code here:
+            controller.consultaPedido();
+            JOptionPane.showMessageDialog(this, "Pesquisa realizada com sucesso");
+            controller.limpaTela();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(this, "Deu erro!");
+            ex.printStackTrace();
+        }
+
     }//GEN-LAST:event_btnConsultarActionPerformed
 
     private void txtValorTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtValorTotalActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_txtValorTotalActionPerformed
 
     /**

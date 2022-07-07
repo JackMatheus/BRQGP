@@ -9,8 +9,7 @@ public class Chamado {
     //private int codigoDoProduto;
     private int codigoDoProduto;
     private String descricao;
-   
-    
+          
     //Produto produto;  
     public Chamado() {
     }

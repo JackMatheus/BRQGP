@@ -12,6 +12,7 @@ public class Cliente {
     private LocalDate dataDeCadastro;
     //Adcionado String email
     private String email;
+    //cpf, nome, endereco, telefone, dataDeCadastro
     
     /*Construtor 1*/
     

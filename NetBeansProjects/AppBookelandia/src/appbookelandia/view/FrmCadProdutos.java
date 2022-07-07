@@ -22,7 +22,7 @@ public class FrmCadProdutos extends javax.swing.JFrame {
      */
     //Importação da controller 
     private ControllerCadProduto controller;
-            
+
     public FrmCadProdutos() {
         initComponents();
         controller = new ControllerCadProduto(this);
@@ -202,8 +202,8 @@ public class FrmCadProdutos extends javax.swing.JFrame {
 
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
-        
-        
+
+
     }//GEN-LAST:event_txtNomeActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
@@ -213,24 +213,24 @@ public class FrmCadProdutos extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Cliente Cadastrado com sucesso");
             controller.limpaTela();
         } catch (SQLException ex) {
-           JOptionPane.showMessageDialog(this, "Deu erro!");
+            JOptionPane.showMessageDialog(this, "Deu erro!");
             ex.printStackTrace();
-        }        
+        }
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void btnConsultaPeloCodigoProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaPeloCodigoProdutoActionPerformed
         // TODO add your handling code here:
-            try {
-        controller.consultaProduto();
-    } catch (Exception ex) {
-        JOptionPane.showMessageDialog(this, "Deu erro!");
-        ex.printStackTrace();
-    }
+        try {
+            controller.consultaProduto();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this, "Deu erro!");
+            ex.printStackTrace();
+        }
     }//GEN-LAST:event_btnConsultaPeloCodigoProdutoActionPerformed
 
     private void btnDeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletarActionPerformed
         // TODO add your handling code here:
-            try {
+        try {
             controller.exclui();
             JOptionPane.showMessageDialog(this, "Item excluido com sucesso!");
             //Não esta execultado a função de limpar a tela
@@ -244,7 +244,7 @@ public class FrmCadProdutos extends javax.swing.JFrame {
 
     private void btnAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtualizarActionPerformed
         // TODO add your handling code here:
-                try {
+        try {
             controller.alteraProduto();
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, "Deu erro!");
@@ -283,7 +283,7 @@ public class FrmCadProdutos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
+
                 new FrmCadProdutos().setVisible(true);
             }
         });
@@ -306,7 +306,6 @@ public class FrmCadProdutos extends javax.swing.JFrame {
     private javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtPreco;
     // End of variables declaration//GEN-END:variables
-
 
     public JTextField getTxtCodigoDoProduto() {
         return txtCodigoDoProduto;
@@ -339,6 +338,5 @@ public class FrmCadProdutos extends javax.swing.JFrame {
     public void setTxtPreco(JTextField txtPreco) {
         this.txtPreco = txtPreco;
     }
-
 
 }

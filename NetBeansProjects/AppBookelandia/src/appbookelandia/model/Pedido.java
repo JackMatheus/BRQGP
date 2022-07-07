@@ -41,7 +41,6 @@ public class Pedido {
     return valorTotal;
     }
 
-
     public int getNumeroDoPedido() {
         return numeroDoPedido;
     }
@@ -49,6 +48,7 @@ public class Pedido {
     public void setNumeroDoPedido(int numeroDoPedido) {
         this.numeroDoPedido = numeroDoPedido;
     }
+
 
     public Cliente getCliente() {
         return cliente;

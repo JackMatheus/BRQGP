@@ -53,10 +53,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
         chamados = new javax.swing.JMenu();
         aberturaChamado = new javax.swing.JMenuItem();
         pesquisaChamado = new javax.swing.JMenuItem();
-        jMenu6 = new javax.swing.JMenu();
-        produtos2 = new javax.swing.JMenuItem();
-        clientes3 = new javax.swing.JMenuItem();
-        funcionarios2 = new javax.swing.JMenuItem();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -198,34 +194,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jMenuBar2.add(chamados);
 
-        jMenu6.setText("Cadastrar / Consultar");
-
-        produtos2.setText("Produtos");
-        produtos2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                produtos2ActionPerformed(evt);
-            }
-        });
-        jMenu6.add(produtos2);
-
-        clientes3.setText("Clientes");
-        clientes3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clientes3ActionPerformed(evt);
-            }
-        });
-        jMenu6.add(clientes3);
-
-        funcionarios2.setText("Funcionarios");
-        funcionarios2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                funcionarios2ActionPerformed(evt);
-            }
-        });
-        jMenu6.add(funcionarios2);
-
-        jMenuBar2.add(jMenu6);
-
         setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -262,7 +230,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     private void aberturaChamadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aberturaChamadoActionPerformed
         // TODO add your handling code here:
-        FrmCadChamadosAbertura chamado = new FrmCadChamadosAbertura();
+        FrmCadChamados chamado = new FrmCadChamados();
         chamado.setVisible(true);
     }//GEN-LAST:event_aberturaChamadoActionPerformed
 
@@ -274,7 +242,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     private void pesquisaChamadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisaChamadoActionPerformed
         // TODO add your handling code here:
-        FrmCadChamadosConsulta chamados = new FrmCadChamadosConsulta();
+        FrmCadChamados chamados = new FrmCadChamados();
         chamados.setVisible(true);
     }//GEN-LAST:event_pesquisaChamadoActionPerformed
 
@@ -295,18 +263,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
         FrmCadClientes cliente = new FrmCadClientes();
         cliente.setVisible(true); 
     }//GEN-LAST:event_clientes2ActionPerformed
-
-    private void produtos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_produtos2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_produtos2ActionPerformed
-
-    private void clientes3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientes3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_clientes3ActionPerformed
-
-    private void funcionarios2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_funcionarios2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_funcionarios2ActionPerformed
 
     private void produtos3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_produtos3ActionPerformed
         // TODO add your handling code here:
@@ -372,13 +328,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu chamados;
     private javax.swing.JMenuItem clientes1;
     private javax.swing.JMenuItem clientes2;
-    private javax.swing.JMenuItem clientes3;
     private javax.swing.JMenuItem clientes4;
     private javax.swing.JMenuItem clientes5;
     private javax.swing.JMenuItem clientes6;
     private javax.swing.JMenuItem funcionarios;
     private javax.swing.JMenuItem funcionarios1;
-    private javax.swing.JMenuItem funcionarios2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -389,7 +343,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private java.awt.Label label1;
@@ -397,7 +350,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem pesquisa;
     private javax.swing.JMenuItem pesquisaChamado;
     private javax.swing.JMenuItem produtos1;
-    private javax.swing.JMenuItem produtos2;
     private javax.swing.JMenuItem produtos3;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,7 +5,8 @@
 package appbookelandia.controller;
 
 import appbookelandia.model.Chamado;
-import appbookelandia.view.FrmCadChamadosConsulta;
+import appbookelandia.view.FrmCadChamados;
+
 
 /**
  *
@@ -13,10 +14,10 @@ import appbookelandia.view.FrmCadChamadosConsulta;
  */
 public class ControllerConsultaChamado {
         //Instanciando a view
-    private FrmCadChamadosConsulta view;
+    private FrmCadChamados view;
     
     //Passando a view como parametro dentro da controller
-    public ControllerConsultaChamado(FrmCadChamadosConsulta view){
+    public ControllerConsultaChamado(FrmCadChamados view){
         this.view = view;            
             }
     //Em andamento
@@ -25,15 +26,14 @@ public class ControllerConsultaChamado {
         c.setCodigoDoCliente(view.getTxtCodigoDoCliente().getText());
         //c.setCodigoDoProduto(view.getTxtCodigoDoProduto().getText());
         c.setDescricao(view.getTxtDescricao().getText());
-        //c.setTicket(view.getTicket().getText());        
+        c.setTicket(view.getTxtTicket().getText());
     }
     
     public void limpaTela(){
         view.getTxtCodigoDoCliente().setText("");
+        //view.getTxtCodigoDoProduto().setText("");
         view.getTxtDescricao().setText("");
-        view.getTxtCodigoDoProduto().setText("");
-        view.getTxtDescricao().setText("");
-        //view.getTxtTicket().setText("");     
+        view.getTxtTicket().setText("");     
       
       }
 }
